@@ -11,7 +11,6 @@ const Item = ({ nombre, visto }) => {
 const ListadoApp = () => {
   const addTask = () => {
     setArreglo([...arreglo, { nombre: "nuevo", visto: false }]);
-    console.log(arreglo);
   };
 
   let listadoSecciones = [
@@ -26,7 +25,6 @@ const ListadoApp = () => {
     { nombre: "customHooks", visto: false },
   ];
   const [arreglo, setArreglo] = useState(listadoSecciones);
-  console.log(arreglo);
   return (
     <>
       <h1 className="componente">COMPONENTE Listado app</h1>
