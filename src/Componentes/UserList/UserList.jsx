@@ -1,25 +1,7 @@
-import { useState, useEffect } from "react";
+import { useFetchData } from "../hooks/useFetchData";
 
 const UserList = ({ endPoint }) => {
-  const [data, setData] = useState([]);
-  const fetchData = async () => {
-    try {
-      const response = await fetch(
-        `https://jsonplaceholder.typicode.com/${endPoint}`
-      );
-      const data = await response.json();
-      //acortando el array
-      const dataCut = data.slice(0, 10);
-      setData(dataCut);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, [endPoint]);
-
+  const { data, isLoading } = useFetchData(endPoint);
   return (
     <>
       <table>
@@ -49,7 +31,7 @@ const UserList = ({ endPoint }) => {
                 <>
                   <td>{item.username}</td>
                   <td>{item.email}</td>
-                  <td>{item.address.city}</td>
+                  <td>{item.address?.city}</td>
                   <td>{item.phone}</td>
                 </>
               )}
@@ -60,13 +42,17 @@ const UserList = ({ endPoint }) => {
       </table>
       <h3>Como lista: </h3>
       <ul>
-        {data.map((item) => (
-          <li key={item.id}>
-            Nombre: {item.name}{" "}
-            {endPoint === "users" ? "Ubicacion:" : "Cuerpo:"}{" "}
-            {endPoint === "users" ? item.address.city : item.body}
-          </li>
-        ))}
+        {isLoading ? (
+          <p>Cargando...</p>
+        ) : (
+          data.map((item) => (
+            <li key={item.id}>
+              Nombre: {item.name}{" "}
+              {endPoint === "users" ? "Ubicacion:" : "Cuerpo:"}{" "}
+              {endPoint === "users" ? item.address?.city : item.body}
+            </li>
+          ))
+        )}
       </ul>
     </>
   );
