@@ -1,0 +1,20 @@
+.array{
+    color: rgb(216, 215, 215);
+    font-weight: bold;
+
+}
+.lista-titulo{
+    color: greenyellow;
+    font-weight: bold;
+}
+.div-array{
+    background-color: rgb(36, 36, 71);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.hide{
+    background-color: rgb(30, 139, 211);
+}
+.hide:hover{
+    background-color: rgb(42, 153, 226);
+}

@@ -1,19 +1,36 @@
+import { useEffect, useRef } from "react";
 import useForm from "../hooks/useForm";
 
 const FormularioComponent = () => {
+  const focusRef = useRef();
+  console.log(focusRef);
+
   const initialForm = {
     userName: "",
     email: "",
     password: "",
     color: "",
     textarea: "",
-  }
-const {userName, email, password, color, textarea ,formState,onInputChange} = useForm(initialForm);
+  };
+  const {
+    userName,
+    email,
+    password,
+    color,
+    textarea,
+    formState,
+    onInputChange,
+  } = useForm(initialForm);
 
   const onSubmit = (event) => {
     event.preventDefault();
     console.log(formState);
   };
+
+  useEffect(() => {
+    focusRef.current.focus();
+  }, []);
+
   return (
     <>
       <h2>Formulario</h2>
@@ -36,6 +53,7 @@ const {userName, email, password, color, textarea ,formState,onInputChange} = us
             Email address
           </label>
           <input
+            ref={focusRef}
             type="email"
             className="form-control"
             name="email"
