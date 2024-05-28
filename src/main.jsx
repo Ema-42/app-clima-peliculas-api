@@ -4,6 +4,8 @@ import "./style.css";
 import HooksApp from "./Componentes/HooksApp";
 import CalculosPesados from "./Componentes/Calculos/CalculosPesados";
 import CallBackComponent from "./Componentes/CallBack/CallBackComponent";
+import ListaTareas from "./Componentes/ListaTareas/ListaTareas";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -19,5 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <HooksApp></HooksApp> */}
     <CalculosPesados></CalculosPesados>
     <CallBackComponent></CallBackComponent>
+    <hr />
+    <ListaTareas></ListaTareas>
   </React.StrictMode>
 );

@@ -8,7 +8,6 @@ const CalculosPesados = () => {
   const [show, setShow] = useState(false);
 
   const getCalculo=(listaNumeros) => useMemo(() => {
-    console.log("calculando");
     return listaNumeros.reduce((a, b) => a * b);
   },[listaNumeros]);
 
