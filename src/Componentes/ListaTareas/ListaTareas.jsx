@@ -97,6 +97,7 @@ const ListaTareas = () => {
   };
   return (
     <>
+    <hr />
       <div className="contenedor-tareas">
         <h2>Agregar tareas reducer</h2>
         <form onSubmit={agregarTareaForm}>
@@ -145,7 +146,6 @@ const ListaTareas = () => {
                     item.finalizada ? "tarea-finalizada" : "tarea-pendiente"
                   }`}
                   key={item.id}
-                  onClick={()=>finalizaarTarea(item)}
                 >
                   <span className="tarea-texto">{item.tarea}</span>
                   <span className="tarea-fecha">{item.fecha}</span>
@@ -171,6 +171,7 @@ const ListaTareas = () => {
           </ul>
         </div>
       </div>
+      <hr />
     </>
   );
 };
