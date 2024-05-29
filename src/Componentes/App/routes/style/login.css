@@ -1,0 +1,59 @@
+.formulario-login-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente si deseas */
+
+  padding: 20px; /* Espaciado interno opcional */
+}
+
+.formulario-login {
+  width: 500px;
+  background-color: rgb(40, 43, 62);
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+}
+.formulario-login button {
+  background-color: rgb(28, 125, 146);
+  border: none;
+}
+.formulario-login button:hover {
+  background-color: rgb(28, 125, 146);
+  border: none;
+}
+.formulario-login button:active {
+  background-color: rgb(
+    31,
+    139,
+    163
+  ) !important; /* Color de fondo al hacer clic */
+}
+.formulario-login label {
+  font-size: 13px;
+}
+.formulario-login input {
+  background-color: rgb(57, 60, 78) ; /* Color de fondo */
+  color: #efefef; /* Color del texto */
+  border: 1px solid #ccc; /* Borde del input */
+  border-radius: 4px; /* Esquinas redondeadas */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: none; /* Eliminar cualquier sombra */ 
+  border: none;
+}
+
+.formulario-login input:focus {
+  background-color: rgb(
+    57,
+    60,
+    78
+  ); /* Mantener el mismo color de fondo al hacer focus */
+  color: #efefef; /* Mantener el mismo color de texto al hacer focus */
+  border-color: #666; /* Color del borde al hacer focus */
+  outline: none; /* Eliminar el brillo */
+  box-shadow: none; /* Eliminar cualquier sombra al hacer focus */
+}
+
+.formulario-login input::placeholder {
+  color: #999; /* Color del texto del placeholder */
+}

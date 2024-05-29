@@ -1,0 +1,37 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay",
+  "cSpell.language": "es",
+  "editor.fontSize": 12.5,
+  "workbench.colorTheme": "Palenight Theme",
+  "editor.fontWeight": "normal",
+  "editor.fontFamily": "'Fira Code',menlo, Consolas, 'Courier New', monospace",
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {
+    //color seleccion
+    "editor.selectionBackground": "#6c6c736c",
+    //pestañas
+    "tab.inactiveBackground": "#1f2330",
+    "tab.activeBackground": "#292f41",
+    "tab.activeForeground": "#e3e3e4",
+    "tab.hoverBackground": "#333a4b",
+    //barra lateral menu y explorador
+    "activityBar.background": "#1f2330",
+    "sideBar.background": "#1f2330",
+
+    "menu.background": "#22273f",
+    "badge.background": "#22273f",
+    "panel.background": "#1f2330",
+    //editor
+    "editor.background": "#222634",
+    //barra de abajo
+    "statusBar.background": "#272c3c"
+  },
+  "editor.wordWrap": "on",
+  "chat.editor.lineHeight": 1.5,
+  "editor.lineHeight": 1.5
+}

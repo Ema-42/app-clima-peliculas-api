@@ -1,35 +1,27 @@
-
-import '../style/home.css';
+import { useContext } from "react";
+import "../style/home.css";
+import { UsuarioContext } from "../context/UsuarioContext";
 const HomeScreen = () => {
+  const { usuario } = useContext(UsuarioContext);
   return (
     <>
-    <h4 className='titulo-home'>Contenido del Home</h4>
+      <h4 className="titulo-home">Contenido del Home</h4>
+
       <table className="table table-striped tabla-home">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Tecnologia </th>
+            <th scope="col">Email</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colSpan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <th>{usuario.edad}</th>
+            <td>{usuario.nombre}</td>
+            <td>{usuario.tecnologia}</td>
+            <td>{usuario.email}</td>
           </tr>
         </tbody>
       </table>

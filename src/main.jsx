@@ -8,6 +8,7 @@ import ListaTareas from "./Componentes/ListaTareas/ListaTareas";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import App from "./Componentes/App/App";
 import { BrowserRouter } from "react-router-dom";
+import WheatherApp from "./Componentes/WheatherApp/WheatherApp";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -25,7 +26,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       {/*     <CalculosPesados></CalculosPesados>
     <CallBackComponent></CallBackComponent> */}
       {/* <ListaTareas></ListaTareas> */}
-      <App></App>
+      {/*<App></App>*/}
+      <WheatherApp></WheatherApp>
     </React.StrictMode>
   </BrowserRouter>
 );
