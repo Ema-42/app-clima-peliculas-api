@@ -2,58 +2,81 @@
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente si deseas */
-
+  color: var(--blanco-1);
   padding: 20px; /* Espaciado interno opcional */
 }
 
+/* styles.css */
+.input-group-text {
+  background-color: var(--blanco-4); /* Color de fondo */
+  border: 1px solid var(--gris-5) ;
+}
+
+.custom-icon {
+  color: var(--azul-2); /* Color del icono */
+}
+
+
+.formulario-titulo {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 .formulario-login {
   width: 500px;
-  background-color: rgb(40, 43, 62);
+  background-color: var(--blanco-1);
   padding: 1rem;
+  color: var(--negro-1);
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 0px;
 }
+
 .formulario-login button {
-  background-color: rgb(28, 125, 146);
+  background-color: var(--verde-azul-3);
   border: none;
+  padding: 10px 20px;
 }
 .formulario-login button:hover {
-  background-color: rgb(28, 125, 146);
+  background-color: var(--verde-azul-4);
   border: none;
 }
-.formulario-login button:active {
-  background-color: rgb(
-    31,
-    139,
-    163
-  ) !important; /* Color de fondo al hacer clic */
+
+.formulario-login select{
+  background-color: var(--blanco-4);
+  font-size: 14px;
+  color: var(--negro-1);
+  border-radius: 4px; /* Esquinas redondeadas */
+  padding: 10px;
+  border: 1px solid var(--gris-5) ;
 }
-.formulario-login label {
-  font-size: 13px;
+
+.formulario-login select:focus{
+  background-color: var(--blanco-4);
+  font-size: 14px;
+  color: var(--negro-1);
+  border-radius: 4px; /* Esquinas redondeadas */
+  padding: 10px;
+  box-shadow: none;
+  border: 1px solid var(--gris-5) ;
 }
+
 .formulario-login input {
-  background-color: rgb(57, 60, 78) ; /* Color de fondo */
-  color: #efefef; /* Color del texto */
-  border: 1px solid #ccc; /* Borde del input */
+  font-size: 14px;
+  background-color: var(--blanco-4); /* Color de fondo */
+  color: var(--negro-1); /* Color del texto */
   border-radius: 4px; /* Esquinas redondeadas */
   padding: 10px; /* Espaciado interno */
-  box-shadow: none; /* Eliminar cualquier sombra */ 
-  border: none;
+  border: 1px solid var(--gris-5) ;
 }
 
 .formulario-login input:focus {
-  background-color: rgb(
-    57,
-    60,
-    78
-  ); /* Mantener el mismo color de fondo al hacer focus */
-  color: #efefef; /* Mantener el mismo color de texto al hacer focus */
-  border-color: #666; /* Color del borde al hacer focus */
+  background-color: var(--blanco-4); /* Color de fondo */
+  color: var(--negro-1);
   outline: none; /* Eliminar el brillo */
   box-shadow: none; /* Eliminar cualquier sombra al hacer focus */
+  border: 1px solid var(--gris-5) ;
 }
 
 .formulario-login input::placeholder {
-  color: #999; /* Color del texto del placeholder */
+  color: var(--gris-4); /* Color del texto del placeholder */
 }

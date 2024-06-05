@@ -6,6 +6,7 @@ import AboutScreen from "./routes/AboutScreen";
 import ContactScreen from "./routes/ContactScreen";
 import UsuarioProvider from "./context/UsuarioProvider";
 import LoginScreen from "./routes/LoginScreen";
+import AppClimaScreen from "./routes/AppClimaScreen";
 const App = () => {
   return (
     <UsuarioProvider>
@@ -17,6 +18,10 @@ const App = () => {
         <Route
           path="/contact"
           element={<ContactScreen></ContactScreen>}
+        ></Route>
+        <Route
+          path="/clima"
+          element={<AppClimaScreen></AppClimaScreen>}
         ></Route>
         <Route path="/*" element={<Navigate to="/" />}></Route>
       </Routes>

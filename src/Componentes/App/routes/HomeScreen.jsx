@@ -1,13 +1,11 @@
 import { useContext } from "react";
-import "../style/home.css";
 import { UsuarioContext } from "../context/UsuarioContext";
 const HomeScreen = () => {
   const { usuario } = useContext(UsuarioContext);
   return (
     <>
       <h4 className="titulo-home">Contenido del Home</h4>
-
-      <table className="table table-striped tabla-home">
+      <table className="table table-striped table-dark">
         <thead>
           <tr>
             <th scope="col">Edad</th>

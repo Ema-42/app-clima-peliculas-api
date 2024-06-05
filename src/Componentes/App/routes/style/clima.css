@@ -1,0 +1,48 @@
+.container-clima {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.form-clima {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-clima input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-clima button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.form-clima button:hover {
+  background-color: #0056b3;
+}
+
+.form-clima h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-clima p {
+  margin-bottom: 5px;
+}
+
+.form-clima img {
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+}

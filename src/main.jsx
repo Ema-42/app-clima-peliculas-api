@@ -1,14 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./style.css";
-import HooksApp from "./Componentes/HooksApp";
-import CalculosPesados from "./Componentes/Calculos/CalculosPesados";
-import CallBackComponent from "./Componentes/CallBack/CallBackComponent";
-import ListaTareas from "./Componentes/ListaTareas/ListaTareas";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import App from "./Componentes/App/App";
 import { BrowserRouter } from "react-router-dom";
-import WheatherApp from "./Componentes/WheatherApp/WheatherApp";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -26,8 +22,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       {/*     <CalculosPesados></CalculosPesados>
     <CallBackComponent></CallBackComponent> */}
       {/* <ListaTareas></ListaTareas> */}
-      {/*<App></App>*/}
-      <WheatherApp></WheatherApp>
+      {/* <WheatherApp></WheatherApp> */}
+      <App></App>
     </React.StrictMode>
   </BrowserRouter>
 );
