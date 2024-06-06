@@ -1,0 +1,162 @@
+[
+  {
+    "nombre": "Emanuel",
+    "apellido": "Gonzalez",
+    "pais": "Cuba",
+    "tecnologia": "Python",
+    "email": "emanuel.gonzalez@example.com",
+    "edad": 25
+  },
+  {
+    "nombre": "Maria",
+    "apellido": "Rodriguez",
+    "pais": "Argentina",
+    "tecnologia": "JavaScript",
+    "email": "maria.rodriguez@example.com",
+    "edad": 30
+  },
+  {
+    "nombre": "Jose",
+    "apellido": "Martinez",
+    "pais": "Mexico",
+    "tecnologia": "React",
+    "email": "jose.martinez@example.com",
+    "edad": 28
+  },
+  {
+    "nombre": "Ana",
+    "apellido": "Perez",
+    "pais": "Chile",
+    "tecnologia": "Python",
+    "email": "ana.perez@example.com",
+    "edad": 24
+  },
+  {
+    "nombre": "Luis",
+    "apellido": "Diaz",
+    "pais": "Peru",
+    "tecnologia": "JavaScript",
+    "email": "luis.diaz@example.com",
+    "edad": 35
+  },
+  {
+    "nombre": "Carmen",
+    "apellido": "Fernandez",
+    "pais": "Colombia",
+    "tecnologia": "React",
+    "email": "carmen.fernandez@example.com",
+    "edad": 29
+  },
+  {
+    "nombre": "Carlos",
+    "apellido": "Garcia",
+    "pais": "Uruguay",
+    "tecnologia": "Python",
+    "email": "carlos.garcia@example.com",
+    "edad": 32
+  },
+  {
+    "nombre": "Elena",
+    "apellido": "Hernandez",
+    "pais": "Venezuela",
+    "tecnologia": "JavaScript",
+    "email": "elena.hernandez@example.com",
+    "edad": 27
+  },
+  {
+    "nombre": "Miguel",
+    "apellido": "Lopez",
+    "pais": "Ecuador",
+    "tecnologia": "React",
+    "email": "miguel.lopez@example.com",
+    "edad": 31
+  },
+  {
+    "nombre": "Lucia",
+    "apellido": "Ramirez",
+    "pais": "Bolivia",
+    "tecnologia": "Python",
+    "email": "lucia.ramirez@example.com",
+    "edad": 26
+  },
+  {
+    "nombre": "Raul",
+    "apellido": "Sanchez",
+    "pais": "Paraguay",
+    "tecnologia": "JavaScript",
+    "email": "raul.sanchez@example.com",
+    "edad": 33
+  },
+  {
+    "nombre": "Rosa",
+    "apellido": "Torres",
+    "pais": "Panama",
+    "tecnologia": "React",
+    "email": "rosa.torres@example.com",
+    "edad": 29
+  },
+  {
+    "nombre": "Antonio",
+    "apellido": "Ramirez",
+    "pais": "Honduras",
+    "tecnologia": "Python",
+    "email": "antonio.ramirez@example.com",
+    "edad": 37
+  },
+  {
+    "nombre": "Isabel",
+    "apellido": "Alvarez",
+    "pais": "Guatemala",
+    "tecnologia": "JavaScript",
+    "email": "isabel.alvarez@example.com",
+    "edad": 28
+  },
+  {
+    "nombre": "Francisco",
+    "apellido": "Castro",
+    "pais": "El Salvador",
+    "tecnologia": "React",
+    "email": "francisco.castro@example.com",
+    "edad": 34
+  },
+  {
+    "nombre": "Marta",
+    "apellido": "Ortiz",
+    "pais": "Nicaragua",
+    "tecnologia": "Python",
+    "email": "marta.ortiz@example.com",
+    "edad": 23
+  },
+  {
+    "nombre": "Jorge",
+    "apellido": "Jimenez",
+    "pais": "Costa Rica",
+    "tecnologia": "JavaScript",
+    "email": "jorge.jimenez@example.com",
+    "edad": 36
+  },
+  {
+    "nombre": "Teresa",
+    "apellido": "Morales",
+    "pais": "Cuba",
+    "tecnologia": "React",
+    "email": "teresa.morales@example.com",
+    "edad": 30
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Ruiz",
+    "pais": "Argentina",
+    "tecnologia": "Python",
+    "email": "pedro.ruiz@example.com",
+    "edad": 27
+  },
+  {
+    "nombre": "Adriana",
+    "apellido": "Mendez",
+    "pais": "Mexico",
+    "tecnologia": "JavaScript",
+    "email": "adriana.mendez@example.com",
+    "edad": 29
+  }
+]

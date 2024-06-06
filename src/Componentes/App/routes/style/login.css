@@ -60,7 +60,9 @@
   border: 1px solid var(--gris-5) ;
 }
 
+
 .formulario-login input {
+  appearance: none; 
   font-size: 14px;
   background-color: var(--blanco-4); /* Color de fondo */
   color: var(--negro-1); /* Color del texto */

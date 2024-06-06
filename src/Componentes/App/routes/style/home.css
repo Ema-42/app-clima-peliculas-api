@@ -1,0 +1,14 @@
+.conteiner-home {
+  color: var(--blanco-1);
+  padding: 30px 20px 30px 20px;
+}
+.tabla-datos-2 {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+}
+

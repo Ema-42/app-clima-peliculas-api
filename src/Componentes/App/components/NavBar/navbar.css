@@ -1,12 +1,66 @@
-.navbar.navbar-expand-lg  {
+.navbar.navbar-expand-lg {
+  background-color: rgba(0, 0, 0, 0.132);
+  backdrop-filter: blur(100px);
+  font-size: 14px;
+}
+.navbar input,
+.navbar button {
+  font-size: 14px;
+}
+.navbar-brand {
+  font-size: 15px;
+}
 
-     background-color: rgba(0, 0, 0, 0.267);
-   }
+span.navbar-toggler-icon {
+  width: 28px; /* Ajusta según sea necesario */
+  height: 25px; /* Ajusta según sea necesario */
+}
+
+button.navbar-toggler.collapsed {
+  background-color: transparent;
+}
+button.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.156);
+  border: 1px solid var(--blanco-6);
+}
+
+button.navbar-toggler:active,
+button.navbar-toggler:focus {
+  box-shadow: none;
+}
 
 .nav-link.active {
-     border-bottom: 1px solid var(--blanco-1) ;
-   }
+  border-bottom: 1px solid var(--blanco-1);
+}
 
-.navbar-brand{
-     color: var(--blanco-1)
+.navbar-brand {
+  color: var(--blanco-1);
+}
+
+input.form-control.me-sm-2 {
+  background-color: var(--blanco-6);
+  box-shadow: none;
+  border: none;
+}
+form.d-flex button {
+  background-color: var(--verde-azul-3);
+  order: none;
+}
+form.d-flex button:hover {
+  background-color: var(--verde-azul-4);
+}
+div.dropdown-menu.show a:hover{
+  background-color: var(--blanco-7);
+  border-radius: 6px;
+}
+div.dropdown-menu.show a {
+  margin: 0px;
+  padding: 10px 10px 10px 10px;
+}
+div.dropdown-menu.show {
+  background-color: var(--blanco-5);
+  padding: 0px 0px 0px 0px;
+}
+div.dropdown-divider{
+  margin: 0px;
 }

@@ -7,6 +7,13 @@ const LoginScreen = () => {
     { nombre: "Python", value: 1, id: 1 },
     { nombre: "JavaScript", value: 2, id: 2 },
     { nombre: "React", value: 3, id: 3 },
+    { nombre: "Node.js", value: 4, id: 4 },
+    { nombre: "Angular", value: 5, id: 5 },
+    { nombre: "Vue.js", value: 6, id: 6 },
+    { nombre: "Ruby on Rails", value: 7, id: 7 },
+    { nombre: "Django", value: 8, id: 8 },
+    { nombre: "Spring", value: 9, id: 9 },
+    { nombre: "Flutter", value: 10, id: 10 }
   ];
 
   const initialForm = {
