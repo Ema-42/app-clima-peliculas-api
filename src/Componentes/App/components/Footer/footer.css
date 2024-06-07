@@ -1,0 +1,55 @@
+/* Footer.css */
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: rgba(54, 54, 54, 0.562);
+  backdrop-filter: blur(30px);
+}
+.section-iconos {
+  display: flex;
+  justify-content: center;
+}
+.section-iconos a{
+     border: none;
+     border-radius: 20px;
+}
+div.div-copyright{
+     background-color: rgba(0, 0, 0, 0.301);
+}
+
+footer .btn-floating {
+  width: 40px;
+  height: 40px;
+}
+
+footer .form-outline {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+footer .form-outline .form-control {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+}
+
+footer .form-outline .form-label {
+  color: #fff;
+}
+
+footer .form-outline .form-control:focus {
+  background: none;
+  border-color: #fff;
+  box-shadow: none;
+}
+
+footer .form-outline .form-label:focus {
+  color: #fff;
+}
+
+footer a.text-white:hover {
+  color: #ddd;
+  text-decoration: none;
+}

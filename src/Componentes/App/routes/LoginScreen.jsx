@@ -117,7 +117,7 @@ const LoginScreen = () => {
             </div>
           </div>
           <div className="d-grid gap-2">
-            <button className="btn btn-primary mb-2" type="submit">
+            <button className="btn   mb-2" type="submit">
               Registrar
             </button>
           </div>

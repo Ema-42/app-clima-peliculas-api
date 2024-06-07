@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 
 import { Navigate, Routes, Route } from "react-router-dom";
 import HomeScreen from "./routes/HomeScreen";
@@ -25,6 +26,7 @@ const App = () => {
         ></Route>
         <Route path="/*" element={<Navigate to="/" />}></Route>
       </Routes>
+      <Footer></Footer>
     </UsuarioProvider>
   );
 };

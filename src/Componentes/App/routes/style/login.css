@@ -19,6 +19,21 @@
   color: var(--negro-1);
   border-radius: 10px;
 }
+.formulario-login button {
+  background-color: var(--verde-azul-3);
+  color: var(--blanco-1);
+}
+.formulario-login button:hover {
+  background-color: var(--verde-azul-4);
+  color: var(--blanco-1);
+}
+
+.d-grid button.btn:active {
+  background-color: var(--verde-azul-4);
+  color: var(--blanco-1);
+  border: 1px solid var(--verde-azul-4);
+}
+
 .formulario-login select {
   background-color: var(--blanco-4);
   font-size: 14px;
@@ -46,7 +61,7 @@
 .formulario-login input:focus {
   background-color: var(--blanco-4); /* Color de fondo */
   color: var(--negro-1);
- 
+
   box-shadow: none; /* Eliminar cualquier sombra al hacer focus */
   border: 1px solid var(--gris-5);
 }
