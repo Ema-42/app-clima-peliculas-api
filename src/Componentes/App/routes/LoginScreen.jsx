@@ -42,13 +42,13 @@ const LoginScreen = () => {
             <label htmlFor="nombreUsuario" className="form-label">
               Nombre de usuario
             </label>
-            <div className="mb-3 input-group">
+            <div className="input-group">
               <span className="input-group-text">
                 <i className="bi bi-person-fill custom-icon"></i>
               </span>
               <input
                 type="text"
-                className="form-control form-control-sm"
+                className="form-control"
                 name="nombre"
                 value={nombre}
                 onChange={onInputChange}
@@ -66,7 +66,7 @@ const LoginScreen = () => {
               </span>
               <input
                 type="email"
-                className="form-control form-control-sm"
+                className="form-control"
                 name="email"
                 value={email}
                 onChange={onInputChange}
@@ -83,7 +83,7 @@ const LoginScreen = () => {
                 <i className="bi bi-file-earmark-code-fill custom-icon"></i>
               </span>
               <select
-                className="form-select form-control form-control-sm"
+                className="form-select form-control"
                 aria-label="Default select example"
                 name="tecnologia"
                 onChange={onInputChange}
@@ -107,7 +107,7 @@ const LoginScreen = () => {
               </span>
               <input
                 type="number"
-                className="form-control form-control-sm"
+                className="form-control"
                 name="edad"
                 value={edad}
                 onChange={onInputChange}
