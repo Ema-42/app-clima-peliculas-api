@@ -19,7 +19,7 @@ const WheatherApp = () => {
   };
 
   const handleCambioCiudad = (e) => {
-    setDataClima(null)
+    setDataClima(null);
     setCiudad(e.target.value);
   };
 
@@ -43,9 +43,20 @@ const WheatherApp = () => {
     <>
       <div className="container-clima">
         <h5>App de Clima</h5>
-        <form onSubmit={onSubmit} className="form-clima">
-          <input type="text" value={ciudad} onChange={handleCambioCiudad} />
-          <button type="submit">Buscar</button>
+        <form onSubmit={onSubmit} class="form-busqueda row g-3">
+          <div class="col-auto">
+            <input
+              type="text"
+              class="form-control"
+              value={ciudad}
+              onChange={handleCambioCiudad}
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">
+              Buscar
+            </button>
+          </div>
         </form>
 
         {dataClima && dataClima.cod === 200 && (
@@ -68,14 +79,13 @@ const WheatherApp = () => {
             <p>Velocidad del viento: {dataClima.wind.speed} m/s</p>
             <p>Amanecer: {formatTime(dataClima.sys.sunrise)}</p>
             <p>Atardecer: {formatTime(dataClima.sys.sunset)}</p>
-            <p>Estado: </p>
             <img
               src={`https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2x.png`}
               alt=""
             />
           </div>
         )}
-        {dataClima && dataClima.cod === '404' && (
+        {dataClima && dataClima.cod === "404" && (
           <div>
             <h2>'{ciudad}' Ciudad no encontrada</h2>
             <p>

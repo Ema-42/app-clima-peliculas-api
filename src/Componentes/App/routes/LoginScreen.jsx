@@ -13,7 +13,7 @@ const LoginScreen = () => {
     { nombre: "Ruby on Rails", value: 7, id: 7 },
     { nombre: "Django", value: 8, id: 8 },
     { nombre: "Spring", value: 9, id: 9 },
-    { nombre: "Flutter", value: 10, id: 10 }
+    { nombre: "Flutter", value: 10, id: 10 },
   ];
 
   const initialForm = {
@@ -97,20 +97,6 @@ const LoginScreen = () => {
               </select>
             </div>
           </div>
-
-          {/*           <div className="mb-3">
-            <label htmlFor="tecnologia" className="form-label">
-              Tecnologia
-            </label>
-            <input
-              type="text"
-              className="form-control form-control-sm"
-              name="tecnologia"
-              value={tecnologia}
-              onChange={onInputChange}
-              placeholder="Tecnología"
-            />
-          </div> */}
           <div className="mb-3">
             <label htmlFor="edad" className="form-label">
               Edad
@@ -131,7 +117,7 @@ const LoginScreen = () => {
             </div>
           </div>
           <div className="d-grid gap-2">
-            <button className="btn btn-primary" type="submit">
+            <button className="btn btn-primary mb-2" type="submit">
               Registrar
             </button>
           </div>

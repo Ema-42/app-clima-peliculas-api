@@ -5,44 +5,34 @@
   margin: 0 auto;
   padding: 20px;
 }
-.form-clima {
+
+.form-busqueda {
   display: flex;
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
   margin-bottom: 20px;
 }
-
-.form-clima input[type="text"] {
-  flex: 1;
-  padding: 10px;
+.form-busqueda .col-auto {
+  flex: 1; /* Permite que el input ocupe todo el espacio disponible */
+}
+.form-busqueda .col-auto:last-child {
+  flex: 0; /* El botón no se expande */
+}
+.form-busqueda input[type="text"] {
+  box-shadow: none;
   border: none;
-  border-radius: 4px;
   outline: none;
 }
-
-.form-clima button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+.form-busqueda button {
   border: none;
-  border-radius: 4px;
+  height: 35px;
   cursor: pointer;
-  margin-left: 1rem;
 }
-
-.form-clima button:hover {
-  background-color: #0056b3;
-}
-
 .form-clima h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.form-clima p {
-  margin-bottom: 5px;
-}
-
 .form-clima img {
   width: 90px;
   height: 90px;
-  margin-top: 10px;
 }

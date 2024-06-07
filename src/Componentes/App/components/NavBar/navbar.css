@@ -1,7 +1,11 @@
 .navbar.navbar-expand-lg {
-  background-color: rgba(0, 0, 0, 0.132);
-  backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 0, 0.493);
+  backdrop-filter: blur(30px);
   font-size: 14px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
 }
 .navbar input,
 .navbar button {
@@ -42,15 +46,27 @@ input.form-control.me-sm-2 {
   box-shadow: none;
   border: none;
 }
+
 form.d-flex button {
   background-color: var(--verde-azul-3);
-  order: none;
+  height: 35px;
+  border: none;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 0 10px;
 }
+
 form.d-flex button:hover {
   background-color: var(--verde-azul-4);
 }
-div.dropdown-menu.show a:hover{
-  background-color: var(--blanco-7);
+.form-control {
+  height: 35px;
+}
+
+div.dropdown-menu.show a:hover {
+  background-color: var(--negro-5);
   border-radius: 6px;
 }
 div.dropdown-menu.show a {
@@ -58,9 +74,10 @@ div.dropdown-menu.show a {
   padding: 10px 10px 10px 10px;
 }
 div.dropdown-menu.show {
-  background-color: var(--blanco-5);
+  background-color: var(--negro-4);
+  backdrop-filter: blur(30px);
   padding: 0px 0px 0px 0px;
 }
-div.dropdown-divider{
+div.dropdown-divider {
   margin: 0px;
 }

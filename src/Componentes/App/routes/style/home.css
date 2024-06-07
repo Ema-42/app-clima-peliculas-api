@@ -2,13 +2,18 @@
   color: var(--blanco-1);
   padding: 30px 20px 30px 20px;
 }
+
+.table th {
+  background-color: #2c2c2c62; /* Color de fondo del encabezado */
+  color: #ffffff; /* Color del texto del encabezado */
+  text-align: center;
+}
+
+.table tr {
+  text-align: center;
+}
+
 .tabla-datos-2 {
   max-width: 100%;
   overflow-x: auto;
 }
-
-.table th,
-.table td {
-  padding: 10px;
-}
-

@@ -5,23 +5,12 @@
   color: var(--blanco-1);
   padding: 20px; /* Espaciado interno opcional */
 }
-
-/* styles.css */
-.input-group-text {
-  background-color: var(--blanco-4); /* Color de fondo */
-  border: 1px solid var(--gris-5) ;
-}
-
-.custom-icon {
-  color: var(--azul-2); /* Color del icono */
-}
-
-
 .formulario-titulo {
   display: block;
   font-size: 20px;
   text-align: center;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 .formulario-login {
   width: 500px;
@@ -41,34 +30,35 @@
   border: none;
 }
 
-.formulario-login select{
+.formulario-login select {
   background-color: var(--blanco-4);
   font-size: 14px;
   color: var(--negro-1);
   border-radius: 4px; /* Esquinas redondeadas */
   padding: 10px;
-  border: 1px solid var(--gris-5) ;
+  border: 1px solid var(--gris-5);
+ 
 }
 
-.formulario-login select:focus{
+.formulario-login select:focus {
   background-color: var(--blanco-4);
   font-size: 14px;
   color: var(--negro-1);
   border-radius: 4px; /* Esquinas redondeadas */
   padding: 10px;
   box-shadow: none;
-  border: 1px solid var(--gris-5) ;
+  border: 1px solid var(--gris-5);
 }
 
-
 .formulario-login input {
-  appearance: none; 
+  appearance: none;
   font-size: 14px;
   background-color: var(--blanco-4); /* Color de fondo */
   color: var(--negro-1); /* Color del texto */
   border-radius: 4px; /* Esquinas redondeadas */
   padding: 10px; /* Espaciado interno */
-  border: 1px solid var(--gris-5) ;
+  border: 1px solid var(--gris-5);
+ 
 }
 
 .formulario-login input:focus {
@@ -76,9 +66,20 @@
   color: var(--negro-1);
   outline: none; /* Eliminar el brillo */
   box-shadow: none; /* Eliminar cualquier sombra al hacer focus */
-  border: 1px solid var(--gris-5) ;
+  border: 1px solid var(--gris-5);
 }
 
 .formulario-login input::placeholder {
   color: var(--gris-4); /* Color del texto del placeholder */
+}
+
+/* styles.css */
+.input-group-text {
+  background-color: var(--blanco-4); /* Color de fondo */
+  border: 1px solid var(--gris-5);
+  height: 35px;
+}
+
+.custom-icon {
+  color: var(--azul-2); /* Color del icono */
 }

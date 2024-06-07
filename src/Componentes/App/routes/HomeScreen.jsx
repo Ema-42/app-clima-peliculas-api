@@ -15,30 +15,30 @@ const HomeScreen = () => {
   return (
     <>
       <div className="conteiner-home">
-      <div className="tabla-datos-2"> 
-        <h4 className="titulo-home">Contenido del Home</h4>
-        <table className="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Edad</th>
-              <th scope="col">Usuario</th>
-              <th scope="col">Tecnologia </th>
-              <th scope="col">Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>{usuario.edad}</th>
-              <td>{usuario.nombre}</td>
-              <td>{usuario.tecnologia}</td>
-              <td>{usuario.email}</td>
-            </tr>
-          </tbody>
-        </table>
+        <h4 className="titulo-home">Este es el Home</h4>
+        <div className="tabla-datos-1">
+          <table className="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Edad</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Tecnologia </th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{usuario.edad}</td>
+                <td>{usuario.nombre}</td>
+                <td>{usuario.tecnologia}</td>
+                <td>{usuario.email}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+        <span>Datos de muestra</span>
         <div className="tabla-datos-2">
-          <span>Datos de muestra</span>
-          <table className="table table-striped" >
+          <table className="table table-striped">
             <thead>
               <tr>
                 <th scope="col">Nombre</th>

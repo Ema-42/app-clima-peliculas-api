@@ -30,7 +30,7 @@ const NavBar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to={"/login"} className="nav-link" >
+                <NavLink to={"/login"} className="nav-link">
                   Login
                 </NavLink>
               </li>
@@ -71,7 +71,7 @@ const NavBar = () => {
                 </div>
               </li>
             </ul>
-            <form className="d-flex">
+            <form className="d-flex align-items-center">
               <input
                 className="form-control me-sm-2"
                 type="search"
