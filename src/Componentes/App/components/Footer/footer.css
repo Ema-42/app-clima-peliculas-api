@@ -10,22 +10,17 @@ footer {
   display: flex;
   justify-content: center;
 }
-.section-iconos a{
-     border: none;
-     border-radius: 20px;
+.section-iconos a {
+  border: none;
+  border-radius: 20px;
 }
-div.div-copyright{
-     background-color: rgba(0, 0, 0, 0.301);
+div.div-copyright {
+  background-color: var(--oscuro-2);
 }
 
 footer .btn-floating {
   width: 40px;
   height: 40px;
-}
-
-footer .form-outline {
-  position: relative;
-  margin-bottom: 1.5rem;
 }
 
 footer .form-outline .form-control {
@@ -35,21 +30,17 @@ footer .form-outline .form-control {
   color: #fff;
 }
 
-footer .form-outline .form-label {
-  color: #fff;
-}
-
-footer .form-outline .form-control:focus {
-  background: none;
-  border-color: #fff;
-  box-shadow: none;
-}
-
-footer .form-outline .form-label:focus {
-  color: #fff;
-}
-
 footer a.text-white:hover {
   color: #ddd;
   text-decoration: none;
+}
+
+#footer-input-correo {
+  border-radius: 6px;
+  background-color: var(--oscuro-2);
+  border: none;
+}
+#footer-input-correo:focus {
+  background-color: var(--oscuro-1);
+  box-shadow: none;
 }

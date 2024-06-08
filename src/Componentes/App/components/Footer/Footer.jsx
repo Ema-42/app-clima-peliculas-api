@@ -52,14 +52,14 @@ const Footer = () => {
         <section className="">
           <form action="">
             <div className="row d-flex justify-content-center">
-              <div className="col-auto">
+              <div className="col-2">
                 <p className="pt-2">
                   <strong>Correo</strong>
                 </p>
               </div>
-              <div className="col-md-5 col-12">
+              <div className="col-auto  ">
                 <div className="form-outline form-white mb-4">
-                  <input type="email" className="form-control" />
+                  <input type="email" className="form-control" id="footer-input-correo" />
                 </div>
               </div>
               <div className="col-auto">
