@@ -1,0 +1,28 @@
+.conteiner-about {
+  color: var(--blanco-1);
+  padding: 30px 20px 30px 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 1rem); /* Ajuste flexible, 3 tarjetas por fila, con un margen */
+  margin: 0.5rem;
+  max-width: 20rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 1rem); /* Ajuste flexible, 2 tarjetas por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Una tarjeta por fila en pantallas pequeñas */
+  }
+}

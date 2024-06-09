@@ -1,0 +1,16 @@
+.carousel-container {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover; /
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}

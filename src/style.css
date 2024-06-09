@@ -38,6 +38,5 @@ body {
   margin: 0;
   background: -webkit-linear-gradient(90deg, #414cb7, #5e3fce, #861bdd);
   background: linear-gradient(90deg, #414cb7, #5e3fce, #861bdd);
-
-  height: 100vh; /* 100% del viewport height #363795 */
 }
+

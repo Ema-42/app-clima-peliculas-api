@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { UsuarioContext } from "../context/UsuarioContext";
 import "./style/home.css";
-import users from "../assets/users.json";
+import usersList from "../assets/users.json";
 
 const HomeScreen = () => {
   const { usuario } = useContext(UsuarioContext);
@@ -9,7 +9,7 @@ const HomeScreen = () => {
 
   useEffect(() => {
     // Aquí estamos directamente importando los datos, no necesitamos fetch
-    setUsuarios(users);
+    setUsuarios(usersList);
   }, []);
 
   return (
