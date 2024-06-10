@@ -3,11 +3,13 @@
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+ 
 }
 
 .carousel-item img {
   height: 400px;
-  object-fit: cover; /
+  object-fit: cover; 
+  border-radius: 6px;
 }
 
 .carousel-caption {

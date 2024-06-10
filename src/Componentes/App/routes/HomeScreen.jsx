@@ -5,17 +5,17 @@ import usersList from "../assets/users.json";
 
 const HomeScreen = () => {
   const { usuario } = useContext(UsuarioContext);
-  const [usuarios, setUsuarios] = useState([]);
 
+  const [usuarios, setUsuarios] = useState([]);
   useEffect(() => {
-    // Aquí estamos directamente importando los datos, no necesitamos fetch
     setUsuarios(usersList);
   }, []);
 
   return (
     <>
-      <div className="conteiner-home">
+      <div className="   conteiner-home    ">
         <h4 className="titulo-home">Este es el Home</h4>
+
         <div className="tabla-datos-1">
           <table className="table table-striped">
             <thead>

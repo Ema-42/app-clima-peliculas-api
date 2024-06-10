@@ -53,7 +53,7 @@ const AboutScreen = () => {
               </p>
             </div>
           </div>
-          <div className="card text-white bg-warning mb-3 mt-3">
+          <div className="card text-white bg-danger mb-3 mt-3">
             <div className="card-header">Header</div>
             <div className="card-body">
               <h4 className="card-title">Primary card title</h4>

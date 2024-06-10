@@ -36,7 +36,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
-  background: -webkit-linear-gradient(90deg, #414cb7, #5e3fce, #861bdd);
-  background: linear-gradient(90deg, #414cb7, #5e3fce, #861bdd);
+  background: url('assets/fondo2.svg') no-repeat center center fixed;
+  background-size: cover;
 }
 
