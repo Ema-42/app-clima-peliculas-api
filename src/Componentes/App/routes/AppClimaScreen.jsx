@@ -43,46 +43,53 @@ const WheatherApp = () => {
     <>
       <div className="container-clima">
         <h5>App de Clima</h5>
-        <form onSubmit={onSubmit} class="form-busqueda row g-3">
-          <div class="col-auto">
+        <form onSubmit={onSubmit} className="form-busqueda row g-3">
+          <div className="col-auto">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               value={ciudad}
               onChange={handleCambioCiudad}
             />
           </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">
+          <div className="col-auto">
+            <button type="submit" className="btn btn-primary mb-3">
               Buscar
             </button>
           </div>
         </form>
 
         {dataClima && dataClima.cod === 200 && (
-          <div>
-            <h2>{dataClima.name}</h2>
-            <p>
-              Temperatura :{" "}
-              {parseInt(farenheitToCelcius(dataClima?.main?.temp))} °C{" "}
-            </p>
-            <p>Condicion Meteorologica: {dataClima.weather[0].description}</p>
-            <p>
-              Temperatura mínima:{" "}
-              {parseInt(farenheitToCelcius(dataClima.main.temp_min))} °C
-            </p>
-            <p>
-              Temperatura máxima:{" "}
-              {parseInt(farenheitToCelcius(dataClima.main.temp_max))} °C
-            </p>
-            <p>Humedad: {dataClima.main.humidity}%</p>
-            <p>Velocidad del viento: {dataClima.wind.speed} m/s</p>
-            <p>Amanecer: {formatTime(dataClima.sys.sunrise)}</p>
-            <p>Atardecer: {formatTime(dataClima.sys.sunset)}</p>
-            <img
-              src={`https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2x.png`}
-              alt=""
-            />
+          <div className="cardContainer">
+            <div className="clima-card">
+              <p className="city">{dataClima.name}</p>
+              <p className="weather">{dataClima.weather[0].description}</p>
+              <img
+                src={`https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2x.png`}
+                alt=""
+              />
+              <p className="temp">
+                {parseInt(farenheitToCelcius(dataClima?.main?.temp))} °C{" "}
+              </p>
+              <div className="minmaxContainer">
+                <div className="min">
+                  <p className="minText">Min</p>
+                  <p className="minTemp">
+                    {parseInt(farenheitToCelcius(dataClima.main.temp_min))} °C
+                  </p>
+                </div>
+                <div className="max">
+                  <p className="maxText">Max</p>
+                  <p className="maxTemp">
+                    {parseInt(farenheitToCelcius(dataClima.main.temp_max))} °C
+                  </p>
+                </div>
+              </div>
+              <div className="humedad-viento">
+                <p>Humedad 💧 : {dataClima.main.humidity}%</p>
+                <p>Viento 💨 : {dataClima.wind.speed} Km/h</p>
+              </div>
+            </div>
           </div>
         )}
         {dataClima && dataClima.cod === "404" && (

@@ -1,10 +1,8 @@
 .container-clima {
   text-align: center;
   color: white;
-  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  
 }
 
 .form-busqueda {
@@ -28,12 +26,69 @@
   height: 35px;
   cursor: pointer;
 }
+
 .form-clima h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 .form-clima img {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
+}
+.clima-card {
+  width: 90%;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--blanco-1);
+  display: flex;
+  flex-direction: column; /* Asegúrate de que la dirección sea columna */
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(237, 237, 237, 0.282);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+}
+.clima-card .temp {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.clima-card .weather {
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+.city {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.minmaxContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.minmaxContainer .min,
+.minmaxContainer .max {
+  width: 100px;
+  background-color: rgba(253, 253, 253, 0.163);
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.min .minText,
+.max .maxText {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.minTemp,
+.maxTemp {
+  font-size: 18px;
+}
+.humedad-viento {
+  margin-top: 1.5rem;
+  text-align: left;
 }
