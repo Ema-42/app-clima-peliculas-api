@@ -1,5 +1,5 @@
 .navbar.navbar-expand-lg {
-  background-color: rgba(0, 0, 0, 0.493);
+  background-color: rgb(51, 57, 77);
   backdrop-filter: blur(30px);
   font-size: 14px;
   position: sticky;
@@ -24,7 +24,7 @@ button.navbar-toggler.collapsed {
   background-color: transparent;
 }
 button.navbar-toggler {
-  background-color: rgba(255, 255, 255, 0.156);
+  background-color: rgb(51, 57, 77);
   border: 1px solid var(--blanco-6);
 }
 
@@ -66,7 +66,7 @@ form.d-flex button:hover {
 }
 
 div.dropdown-menu.show a:hover {
-  background-color: var(--negro-5);
+  background-color: rgb(74, 79, 95);
   border-radius: 6px;
 }
 div.dropdown-menu.show a {
@@ -74,7 +74,7 @@ div.dropdown-menu.show a {
   padding: 10px 10px 10px 10px;
 }
 div.dropdown-menu.show {
-  background-color: var(--negro-4);
+  background-color: rgb(51, 57, 77);
   backdrop-filter: blur(30px);
   padding: 0px 0px 0px 0px;
 }
