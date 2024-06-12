@@ -7,7 +7,7 @@
 
 .form-busqueda {
   display: flex;
-  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  margin-top: 1rem;
   margin-bottom: 20px;
 }
 .form-busqueda .col-auto {
@@ -20,6 +20,7 @@
   box-shadow: none;
   border: none;
   outline: none;
+  width: 100%;
 }
 .form-busqueda button {
   border: none;

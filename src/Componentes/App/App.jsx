@@ -7,7 +7,8 @@ import ContactScreen from "./routes/ContactScreen";
 import UsuarioProvider from "./context/UsuarioProvider";
 import LoginScreen from "./routes/LoginScreen";
 import AppClimaScreen from "./routes/AppClimaScreen";
-import './App.css'; // Importa el archivo CSS
+import "./App.css"; // Importa el archivo CSS
+import AppPeliculasScreen from "./routes/AppPeliculasScreen";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/about" element={<AboutScreen />} />
             <Route path="/contact" element={<ContactScreen />} />
             <Route path="/clima" element={<AppClimaScreen />} />
+            <Route path="/peliculas" element={<AppPeliculasScreen />} />
             <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
         </div>

@@ -45,6 +45,11 @@ const NavBar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink to={"/peliculas"} className="nav-link">
+                  Peliculas
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink to={"/clima"} className="nav-link">
                   Clima
                 </NavLink>
