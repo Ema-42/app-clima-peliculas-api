@@ -1,9 +1,12 @@
 import React from "react";
-import './carrusel.css'
+import "./carrusel.css";
 const Carrusel = () => {
   return (
     <>
-      <div id="carouselExampleCaptions" className="carousel slide carousel-container">
+      <div
+        id="carouselExampleCaptions"
+        className="carousel slide carousel-container"
+      >
         <div className="carousel-indicators">
           <button
             type="button"
@@ -28,7 +31,7 @@ const Carrusel = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="src/Componentes/App/assets/img/img-1.webp" className="d-block w-100" />
+            <img src="/assets/img/img-1.webp" className="d-block w-100" />
             <div className="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -37,7 +40,7 @@ const Carrusel = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src="src/Componentes/App/assets/img/img-2.webp" className="d-block w-100" />
+            <img src="/assets/img/img-2.webp" className="d-block w-100" />
             <div className="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -46,7 +49,7 @@ const Carrusel = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src="src/Componentes/App/assets/img/img-3.webp" className="d-block w-100" />
+            <img src="/assets/img/img-3.webp" className="d-block w-100" />
             <div className="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>

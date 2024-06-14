@@ -7,8 +7,8 @@ import ContactScreen from "./routes/ContactScreen";
 import UsuarioProvider from "./context/UsuarioProvider";
 import LoginScreen from "./routes/LoginScreen";
 import AppClimaScreen from "./routes/AppClimaScreen";
-import "./App.css"; // Importa el archivo CSS
 import AppPeliculasScreen from "./routes/AppPeliculasScreen";
+import "./App.css"; // Importa el archivo CSS
 
 const App = () => {
   return (

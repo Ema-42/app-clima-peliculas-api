@@ -1,11 +1,9 @@
-/* Estilos generales */
-body {
-  color: var(--blanco-1);
-}
+/* Estilos generales 
 
 .container {
   max-width: 800px;
   margin: 0 auto;
+  color: var(--blanco-1);
   padding: 20px;
 }
 
@@ -69,7 +67,6 @@ button:hover {
   margin-bottom: 5px;
 }
 
-/* Estilos para móviles */
 @media (max-width: 600px) {
   h1 {
     font-size: 20px;
@@ -95,3 +92,4 @@ button:hover {
     font-size: 16px;
   }
 }
+ */

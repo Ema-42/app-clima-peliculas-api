@@ -7,15 +7,12 @@
 
 .form-busqueda {
   display: flex;
+  justify-content: center;
   margin-top: 1rem;
   margin-bottom: 20px;
+  
 }
-.form-busqueda .col-auto {
-  flex: 1; /* Permite que el input ocupe todo el espacio disponible */
-}
-.form-busqueda .col-auto:last-child {
-  flex: 0; /* El botón no se expande */
-}
+
 .form-busqueda input[type="text"] {
   box-shadow: none;
   border: none;

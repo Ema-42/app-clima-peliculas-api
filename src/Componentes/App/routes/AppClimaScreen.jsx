@@ -44,7 +44,7 @@ const WheatherApp = () => {
       <div className="container-clima">
         <h5 className="titulo-pagina">App de Clima</h5>
         <form onSubmit={onSubmit} className="form-busqueda row g-3">
-          <div className="col-6">
+          <div className="col-12 col-md-3">
             <input
               type="text"
               className="form-control"
@@ -52,8 +52,8 @@ const WheatherApp = () => {
               onChange={handleCambioCiudad}
             />
           </div>
-          <div className="col-auto">
-            <button type="submit" className="btn btn-primary mb-3">
+          <div className="col-12 col-md-auto">
+            <button type="submit" className="btn btn-primary w-100 mb-3">
               Buscar
             </button>
           </div>
