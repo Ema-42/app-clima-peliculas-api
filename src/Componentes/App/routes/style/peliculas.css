@@ -1,42 +1,30 @@
-/* Estilos generales 
-
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   color: var(--blanco-1);
   padding: 20px;
 }
 
-h1 {
+.container h1 {
   font-size: 24px;
+  font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
 }
 
-form {
+.container form {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
-input[type="text"] {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.container input[type="text"] {
+  width: 100%;
+  border-radius: 6px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
+.form-control,
+.btn {
+  height: 38px;
 }
 
 .movie-list {
@@ -61,22 +49,24 @@ button:hover {
 .movie-card h2 {
   font-size: 18px;
   margin-bottom: 5px;
+  color: var(--negro-1);
 }
 
 .movie-card p {
   margin-bottom: 5px;
+  color: var(--negro-1);
 }
 
 @media (max-width: 600px) {
-  h1 {
+  .container h1 {
     font-size: 20px;
   }
 
-  input[type="text"] {
+  .container input[type="text"] {
     width: 100%;
   }
 
-  button {
+  .container button {
     padding: 8px 16px;
   }
 
@@ -92,4 +82,3 @@ button:hover {
     font-size: 16px;
   }
 }
- */

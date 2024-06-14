@@ -1,5 +1,4 @@
 footer {
-  padding-top: 10px;
   padding-bottom: 20px;
   background-color: rgb(51, 57, 77);
   backdrop-filter: blur(30px);
@@ -20,7 +19,10 @@ footer a.text-white:hover {
   color: #ddd;
   text-decoration: none;
 }
+.form-suscribe {
 
+  width: 100%;
+}
 #footer-input-correo {
   border-radius: 6px;
   background-color: var(--oscuro-2);
@@ -30,4 +32,5 @@ footer a.text-white:hover {
 #footer-input-correo:focus {
   background-color: var(--oscuro-1);
   box-shadow: none;
+  outline: 1px solid var(--gris-4);
 }
