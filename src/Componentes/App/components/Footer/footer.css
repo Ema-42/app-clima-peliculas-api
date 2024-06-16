@@ -19,10 +19,6 @@ footer a.text-white:hover {
   color: #ddd;
   text-decoration: none;
 }
-.form-suscribe {
-
-  width: 100%;
-}
 #footer-input-correo {
   border-radius: 6px;
   background-color: var(--oscuro-2);

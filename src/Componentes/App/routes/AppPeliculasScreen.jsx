@@ -33,7 +33,7 @@ const AppPeliculasScreen = () => {
           <div className="col-12 col-md-9">
             <input
               type="text"
-              placeholder="busqueda"
+              placeholder="Busqueda"
               value={busqueda}
               onChange={handleInputChange}
               className="form-control"
