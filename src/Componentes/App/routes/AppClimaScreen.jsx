@@ -56,7 +56,7 @@ const WheatherApp = () => {
           <div className="col-12 col-md-3">
             <button
               type="submit"
-              className="btn btn-primary mb-3 w-100 w-md-auto"
+              className="btn btn-success mb-3 w-100 w-md-auto"
             >
               Buscar
             </button>

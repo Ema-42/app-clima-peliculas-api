@@ -41,7 +41,7 @@ const AppPeliculasScreen = () => {
           </div>
           <div className="col-12 col-md-3">
             <button
-              className="btn btn-primary mb-3 w-100 w-md-auto"
+              className="btn btn-success mb-3 w-100 w-md-auto"
               type="submit"
             >
               Buscar
