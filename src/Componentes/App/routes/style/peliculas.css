@@ -1,23 +1,23 @@
-.container {
-  max-width: 1000px;
+.container-peliculas {
+  max-width: 100%;
   margin: 0 auto;
   color: var(--blanco-1);
   padding: 20px;
 }
 
-.container h1 {
+.container-peliculas h1 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.container form {
+.container-peliculas form {
   display: flex;
   justify-content: center;
 }
 
-.container input[type="text"] {
+.container-peliculas input[type="text"] {
   width: 100%;
   border-radius: 6px;
 }
@@ -29,15 +29,18 @@
 
 .movie-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 100fr));
   gap: 20px;
 }
 
 .movie-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px;
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.278);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+  height: 450px;
+  overflow: auto;
 }
 
 .movie-card img {
@@ -46,27 +49,31 @@
   margin-bottom: 10px;
 }
 
-.movie-card h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: var(--negro-1);
+.movie-card .titulo-pelicula {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--blanco-1);
 }
 
-.movie-card p {
-  margin-bottom: 5px;
-  color: var(--negro-1);
+.movie-card .sinopsis-pelicula {
+  font-size: 15px;
+  color: var(--blanco-1);
+  text-align: justify;
 }
 
 @media (max-width: 600px) {
-  .container h1 {
+  .container-peliculas h1 {
     font-size: 20px;
   }
 
-  .container input[type="text"] {
+  .container-peliculas input[type="text"] {
     width: 100%;
   }
 
-  .container button {
+  .container-peliculas button {
     padding: 8px 16px;
   }
 

@@ -27,8 +27,8 @@ const AppPeliculasScreen = () => {
   };
   return (
     <>
-      <div className="container">
-        <h1>PELICULAS</h1>
+      <div className="container-peliculas">
+        <h1>PELICULAS 🎞️</h1>
         <form action="" className="row g-3" onSubmit={handleSubmit}>
           <div className="col-12 col-md-9">
             <input
@@ -55,8 +55,8 @@ const AppPeliculasScreen = () => {
                 src={`https://image.tmdb.org/t/p/w500${pelicula.poster_path}`}
                 alt={pelicula.title}
               />
-              <h2>{pelicula.title}</h2>
-              <p>{pelicula.overview}</p>
+              <h2 className="titulo-pelicula">{pelicula.title}</h2>
+              <p className="sinopsis-pelicula">{pelicula.overview}</p>
             </div>
           ))}
         </div>

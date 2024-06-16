@@ -12,7 +12,7 @@ const WheatherApp = () => {
     return temperatura - 273.15;
   };
   const formatTime = (timestamp) => {
-    const date = new Date(timestamp * 1000); // Convertir el timestamp a milisegundos
+    const date = new Date(timestamp * 1000);
     const hours = date.getHours().toString().padStart(2, "0");
     const minutes = date.getMinutes().toString().padStart(2, "0");
     return `${hours}:${minutes}`;
@@ -42,9 +42,9 @@ const WheatherApp = () => {
   return (
     <>
       <div className="container-clima">
-        <h5 className="titulo-pagina">App de Clima</h5>
-        <form onSubmit={onSubmit} className="form-busqueda row g-3">
-          <div className="col-12 col-md-8">
+        <h1>CLIMA 🌥️</h1>
+        <form onSubmit={onSubmit} className="  row g-3">
+          <div className="col-12 col-md-9">
             <input
               type="text"
               className="form-control"
@@ -52,43 +52,49 @@ const WheatherApp = () => {
               onChange={handleCambioCiudad}
             />
           </div>
-          <div className="col-12 col-md-auto">
-            <button type="submit" className="btn btn-primary w-100 mb-3">
+          <div className="col-12 col-md-3">
+            <button
+              type="submit"
+              className="btn btn-primary mb-3 w-100 w-md-auto"
+            >
               Buscar
             </button>
           </div>
         </form>
 
         {dataClima && dataClima.cod === 200 && (
-          <div className="cardContainer">
-            <div className="clima-card">
-              <p className="city">{dataClima.name}</p>
-              <p className="weather">{dataClima.weather[0].description}</p>
-              <img
-                src={`https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2x.png`}
-                alt=""
-              />
-              <p className="temp">
-                {parseInt(farenheitToCelcius(dataClima?.main?.temp))} °C{" "}
-              </p>
-              <div className="minmaxContainer">
-                <div className="min">
-                  <p className="minText">Min</p>
-                  <p className="minTemp">
-                    {parseInt(farenheitToCelcius(dataClima.main.temp_min))} °C
-                  </p>
-                </div>
-                <div className="max">
-                  <p className="maxText">Max</p>
-                  <p className="maxTemp">
-                    {parseInt(farenheitToCelcius(dataClima.main.temp_max))} °C
-                  </p>
-                </div>
+          <div className="clima-card">
+            <p className="city">{dataClima.name}</p>
+
+            <div className="conteiner-img-temp">
+              <div className="conteiner-img">
+                <img
+                  src={`https://openweathermap.org/img/wn/${dataClima.weather[0].icon}@2x.png`}
+                  alt=""
+                />
               </div>
-              <div className="humedad-viento">
-                <p>Humedad 💧 : {dataClima.main.humidity}%</p>
-                <p>Viento 💨 : {dataClima.wind.speed} Km/h</p>
+              <div className="conteiner-temp">
+                <p className="temp">
+                  {parseInt(farenheitToCelcius(dataClima?.main?.temp))} °C{" "}
+                </p>
+                <p className="weather">{dataClima.weather[0].description}</p>
               </div>
+            </div>
+
+            <div className="minmaxContainer">
+              <span className="minText">Max : </span>
+              <span className="minTemp">
+                {parseInt(farenheitToCelcius(dataClima.main.temp_min))} °C
+              </span>
+              <hr />
+              <span className="maxText">Min : </span>
+              <span className="maxTemp">
+                {parseInt(farenheitToCelcius(dataClima.main.temp_max))} °C
+              </span>
+            </div>
+            <div className="humedad-viento">
+              <p>Humedad 💧 : {dataClima.main.humidity}%</p>
+              <p>Viento 💨 : {dataClima.wind.speed} Km/h</p>
             </div>
           </div>
         )}
