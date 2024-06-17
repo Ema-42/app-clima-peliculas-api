@@ -21,7 +21,7 @@
   --gris-3: #525252;
   --gris-4: #7e7e7e;
   --gris-5: #b4b4b4;
-  --gris-5: #d7d7d7;
+  --gris-6: #d7d7d7;
 
   --azul-1: #2b2d79;
   --azul-2: #3a3cad;
@@ -36,7 +36,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
-  background: url('/public/assets/fondo2.svg') no-repeat center center fixed;
+  background: url('/assets/fondo2.svg') no-repeat center center fixed;
   background-size: cover;
 }
 

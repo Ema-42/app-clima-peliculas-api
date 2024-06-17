@@ -50,7 +50,7 @@ const WheatherApp = () => {
               className="form-control"
               value={ciudad}
               onChange={handleCambioCiudad}
-              placeholder="Pelicula"
+              placeholder="Ciudad"
             />
           </div>
           <div className="col-12 col-md-3">

@@ -15,7 +15,15 @@
 .navbar-brand {
   font-size: 15px;
 }
-
+i.icono-app-menu {
+  font-size: 25px; /* Tamaño en píxeles */
+  color: white;
+  margin-right: 1rem;
+}
+.div-icon-name {
+  display: flex;
+  align-items: center;
+}
 span.navbar-toggler-icon {
   width: 28px; /* Ajusta según sea necesario */
   height: 25px; /* Ajusta según sea necesario */
@@ -34,7 +42,7 @@ button.navbar-toggler:focus {
   box-shadow: none;
 }
 
-.nav-link.active {
+a.nav-link.active {
   border-bottom: 1px solid var(--blanco-1);
 }
 
@@ -62,7 +70,7 @@ form.d-flex button {
 form.d-flex button:hover {
   background-color: var(--verde-azul-4);
 }
-.form-control {
+input.form-control {
   height: 35px;
 }
 

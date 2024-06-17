@@ -8,9 +8,12 @@ const NavBar = () => {
     <>
       <nav className="navbar navbar-expand-lg " data-bs-theme="dark">
         <div className="container-fluid">
-          <Link className="navbar-brand" to={"/"}>
-            Aplicacion de {usuario.nombre}
-          </Link>
+          <div className="div-icon-name">
+            <i class="icono-app-menu bi bi-person-circle"></i>
+            <Link className="navbar-brand" to={"/"}>
+              Aplicacion de {usuario.nombre}
+            </Link>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
