@@ -27,16 +27,15 @@
   --azul-2: #3a3cad;
   --azul-3: #363fc7;
 
-  --verde-azul-1: #237049; /* Un tono más claro */
-  --verde-azul-2: #258354; /* Un tono más oscuro */
-  --verde-azul-3: #23965c; /* Otra variante */
-  --verde-azul-4: #23a162; /* Otra variante */
+  --verde-azul-1: #237049;
+  --verde-azul-2: #258354;
+  --verde-azul-3: #23965c;
+  --verde-azul-4: #23a162;
 }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
-  background: url('/assets/fondo2.svg') no-repeat center center fixed;
+  background: url("/assets/fondo2.svg") no-repeat center center fixed;
   background-size: cover;
 }
-
